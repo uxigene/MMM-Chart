@@ -22,7 +22,7 @@ cd ~/MagicMirror/modules/MMM-Chart
 ````
 
 ````
-npm installl
+npm install
 ````
 
 Configure the module in your `config.js` file.
