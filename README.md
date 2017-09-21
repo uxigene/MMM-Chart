@@ -16,6 +16,15 @@ Clone this repository:
 git clone git@github.com:MarinescuEvghenii/MMM-Chart.git
 ````
 
+Install dependencies:
+````
+cd ~/MagicMirror/modules/MMM-Chart
+````
+
+````
+npm installl
+````
+
 Configure the module in your `config.js` file.
 
 ## Using the module
