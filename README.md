@@ -34,7 +34,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 modules: [
 	{
 		module: 'MMM-Chart',
-		config: {
+		chartConfig: {
 			// See 'Configuration options' for more information.
 		}
 	}
