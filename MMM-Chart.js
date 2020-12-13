@@ -29,12 +29,15 @@ Module.register("MMM-Chart", {
         wrapperEl.setAttribute("style", "position: relative; display: inline-block;");
 
         // Create chart canvas
-        const chartEl  = document.createElement("canvas");
-        chartEl.width  = this.config.width;
-        chartEl.height = this.config.height;
+        const chartEl  = document.createElement("canvas");        
 
         // Init chart.js
         this.chart = new Chart(chartEl.getContext("2d"), this.config.chartConfig);
+		
+	// Set the size
+	chartEl.width  = this.config.width;
+        chartEl.height = this.config.height;
+	chartEl.setAttribute("style", "display: block;");
 
         // Append chart
         wrapperEl.appendChild(chartEl);
