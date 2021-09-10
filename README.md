@@ -13,7 +13,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ````
-git clone git@github.com:MarinescuEvghenii/MMM-Chart.git
+git clone https://github.com/evghenix/MMM-Chart.git
 ````
 
 Install dependencies:
