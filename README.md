@@ -1,5 +1,5 @@
 # MMM-Chart
-Chart module for [MagicMirror²](https://github.com/MichMich/MagicMirror). This is a simple wrapper for [Chart.js](http://www.chartjs.org/)
+Chart module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror). This is a simple wrapper for [Chart.js](http://www.chartjs.org/)
 
 ## Screenshot
 ![](.github/example.png)
