@@ -3,7 +3,7 @@
 /* Magic Mirror
  * Module: MMM-Chart
  *
- * By Evghenii Marinescu https://github.com/MarinescuEvghenii/
+ * By Evghenii Marinescu https://github.com/evghenix/
  * MIT Licensed.
  */
 
