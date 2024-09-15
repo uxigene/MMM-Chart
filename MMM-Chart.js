@@ -15,7 +15,7 @@ Module.register("MMM-Chart", {
     },
 
     getScripts: function() {
-		return ["modules/" + this.name + "/node_modules/chart.js/dist/Chart.bundle.min.js"];
+		return ["modules/" + this.name + "/node_modules/chart.js/dist/chart.umd.js"];
 	},
 
 	start: function() {

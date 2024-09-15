@@ -5,7 +5,7 @@
   "author": "Evghenii Marinescu",
   "license": "MIT",
   "dependencies": {
-    "chart.js": "^2.7.0"
+    "chart.js": "^4.4.4"
   },
   "main": "MMM-Chart.js",
   "scripts": {
