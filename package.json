@@ -1,10 +1,27 @@
 {
   "name": "mmm-charts",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "Chart module for MagicMirror². This is a simple wrapper for Chart.js.",
+  "author": "Evghenii Marinescu",
   "license": "MIT",
   "dependencies": {
-    "chart.js": "^2.7.0"
-  }
+    "chart.js": "^4.4.4"
+  },
+  "main": "MMM-Chart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxigene/MMM-Chart.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "Charts",
+    "Chart.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/uxigene/MMM-Chart/issues"
+  },
+  "homepage": "https://github.com/uxigene/MMM-Chart#readme"
 }

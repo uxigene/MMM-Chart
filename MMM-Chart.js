@@ -1,9 +1,9 @@
-/* global Module */
+/* global Chart Log Module */
 
-/* Magic Mirror
+/* MagicMirror²
  * Module: MMM-Chart
  *
- * By Evghenii Marinescu https://github.com/MarinescuEvghenii/
+ * By Evghenii Marinescu https://github.com/evghenix/
  * MIT Licensed.
  */
 
@@ -14,34 +14,33 @@ Module.register("MMM-Chart", {
         chartConfig : {}
     },
 
-    getScripts: function() {
-		return ["modules/" + this.name + "/node_modules/chart.js/dist/Chart.bundle.min.js"];
-	},
+    getScripts () {
+        return [`modules/${this.name}/node_modules/chart.js/dist/chart.umd.js`];
+    },
 
-	start: function() {
-        this.config = Object.assign({}, this.defaults, this.config);
-		Log.info("Starting module: " + this.name);
-	},
+    start () {
+        Log.info(`Starting module: ${this.name}`);
+    },
 
-	getDom: function() {
-        // Create wrapper element
+    getDom () {
+    // Create wrapper element
         const wrapperEl = document.createElement("div");
         wrapperEl.setAttribute("style", "position: relative; display: inline-block;");
 
         // Create chart canvas
-        const chartEl  = document.createElement("canvas");        
+        const chartEl = document.createElement("canvas");
 
         // Init chart.js
         this.chart = new Chart(chartEl.getContext("2d"), this.config.chartConfig);
-		
-	// Set the size
-	chartEl.width  = this.config.width;
+
+        // Set the size
+        chartEl.width  = this.config.width;
         chartEl.height = this.config.height;
-	chartEl.setAttribute("style", "display: block;");
+        chartEl.setAttribute("style", "display: block;");
 
         // Append chart
         wrapperEl.appendChild(chartEl);
 
-		return wrapperEl;
-	}
+        return wrapperEl;
+    }
 });
